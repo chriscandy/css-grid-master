@@ -6,7 +6,9 @@
   Let's go through the important bits real quick
 */
 :root {
-  --yellow: #ffc600;
+  --yellow: #f6bb42;
+  --gradient-start: #fdeb71;
+  --gradient-end: #f8d800;
   --black: #272727;
 }
 
@@ -58,10 +60,13 @@ h6 {
   display: grid;
   justify-content: center;
   align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.03);
   border-radius: 3px;
   font-size: 35px;
-  background-color: var(--yellow); /* best colour */
+  background-image: linear-gradient(
+    112deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
 }
 
 .item p {
